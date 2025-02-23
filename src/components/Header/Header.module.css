@@ -1,0 +1,10 @@
+.header_background{
+  border: 1px solid rgba(190, 68, 35, 1);
+  background-color: #202123;
+}
+.navbar_cover{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)),
+  linear-gradient(0deg, rgba(37, 46, 61, 0.15), rgba(37, 46, 61, 0.15));
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #BE4423 0%, #938F99 49.52%, #8F331A 100%);
+}
