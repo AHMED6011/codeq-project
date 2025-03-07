@@ -1,9 +1,12 @@
+"use client"
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 export default function Header() {
+  const router = useRouter();
   return (
-    <nav className={`${styles.header_background} navbar navbar-expand-lg mx-auto mt-3 `}
+    <nav className={`${styles.header_background} fixed-top navbar navbar-expand-lg mx-auto mt-3 `}
           style={{width: "90%", borderRadius: "72px",padding: "5px 10px",heigth: "65px"}}>
       <div className="d-flex align-items-center justify-content-between" style={{width: "95%", margin: "0 auto"}}>
         <Link href="/">
@@ -15,10 +18,10 @@ export default function Header() {
               <Link className="nav-link active" style={{color: "#BE4423"}} aria-current="page" href="/">الصفحة الرئيسية</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white text-lg" href="#about">من نحن</a>
+              <Link  href="#about" className="nav-link text-white text-lg">من نحن</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white text-lg" href="#services">خدماتنا</a>
+              <Link href="#services" className="nav-link text-white text-lg" >خدماتنا</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white text-lg" href="#projects">المشاريع</a>

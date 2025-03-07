@@ -1,0 +1,20 @@
+.services_stroke {
+  position: relative;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: white; /* Adjust if needed */
+}
+
+.services_stroke::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid transparent;
+  border-radius: 24px;
+  background: linear-gradient(179.56deg, #252E3D 10.64%, #ADADAD 52.87%, #252E3D 96.32%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  pointer-events: none;
+}

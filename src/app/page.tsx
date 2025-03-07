@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Services from "../components/Services/Services";
 import styles from "./page.module.css";
 import Link from "next/link";
 import HeroBg from "../components/HeroBg";
@@ -23,6 +24,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Services />
     </>
   );
 }
