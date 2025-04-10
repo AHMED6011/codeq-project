@@ -1,10 +1,29 @@
-.header_background{
+.header_background {
   border: 1px solid rgba(190, 68, 35, 1);
-  background-color: #202123;
+  background-color: #20212369;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
-.navbar_cover{
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)),
-  linear-gradient(0deg, rgba(37, 46, 61, 0.15), rgba(37, 46, 61, 0.15));
+.navbar_cover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    ),
+    linear-gradient(0deg, rgba(37, 46, 61, 0.15), rgba(37, 46, 61, 0.15));
   border: 1px solid;
-  border-image-source: linear-gradient(90deg, #BE4423 0%, #938F99 49.52%, #8F331A 100%);
+  border-image-source: linear-gradient(
+    90deg,
+    #be4423 0%,
+    #938f99 49.52%,
+    #8f331a 100%
+  );
+}
+.navbar_bars {
+  border: 1px solid white;
+}
+
+.navbar_bars:focus {
+  outline: none;
+  box-shadow: none;
 }

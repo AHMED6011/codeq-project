@@ -4,6 +4,7 @@ import "./globals.css";
 import BootstrapClient from "../components/BootstrapClient";
 import Header from "../components/Header/Header.jsx";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
+import FontAwesomeConfig from "../../fontawesome";
 
 const plex = IBM_Plex_Sans_Arabic({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <FontAwesomeConfig />
       </head>
       <body className={`${plex.className}`}>
         <Header />
