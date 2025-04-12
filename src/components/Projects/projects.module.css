@@ -1,0 +1,148 @@
+.projectsContainer {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    color: #BE4423;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 172%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .sectionDescription {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .projectsGrid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8px;
+    height: 700px;
+  }
+  
+  .projectCard {
+    border-radius: 10px;
+    border: 1.5px solid #252E3D;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+    .projectCard:hover {
+        border: 1px solid #EE552C;
+        transform: scale(1.02);
+    }
+  
+  .projectCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .projectCard h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #EE552C;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .projectCard p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 151%;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .webDesign {
+    grid-column: 1/2;
+    background-image: url('/images/webdesign_project.png');
+  }
+  
+  .visualIdentity {
+    grid-column: 2/3;
+    background-image: url('/images/visualId_project.png');
+  }
+  
+  .softwareProjects {
+    grid-column: 1/3;
+    background-image: url('/images/programming_project.png');
+  }
+  
+  .softwareProjects p {
+    width: 746px;
+    max-width: 100%;
+  }
+  
+  .viewButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+    text-align: right;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .viewButton:hover {
+    color: #EE552C;
+  }
+  
+  .viewButton svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .viewButton:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .projectsGrid {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    
+    .projectCard {
+      grid-column: 1/2 !important;
+      height: 300px;
+    }
+    
+    .sectionTitle {
+      font-size: 30px;
+      margin-top: 100px;
+    }
+  }

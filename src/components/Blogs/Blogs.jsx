@@ -26,7 +26,7 @@ export default function Blogs() {
   ];
   return (
     <div>
-      <h1 className="text-center">استكشف مقالاتنا وأحدث الأخبار</h1>
+      <h1 className="text-center" style={{marginTop : '150px'}}>استكشف مقالاتنا وأحدث الأخبار</h1>
       <div className="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-5">
         {blogsContent.map((item, index) => (
           <Blog

@@ -42,18 +42,18 @@ export default function FAQ() {
   return (
     <div className="container my-5">
       {/* العنوان */}
-      <h1 className="text-center mb-5">الأسئلة الشائعة</h1>
+      <h1 className="text-center mb-5" style={{marginTop: '150px'}}>الأسئلة الشائعة</h1>
 
       <div className="row align-items-center gy-4 ">
 
       {/* القسم الأول: الصورة */}
-          <div className="col-lg-6  justify-content-center d-flex">
+          <div className={`col-lg-6  justify-content-center d-flex1 `}>
           <Image
             src="/images/aboutUs.png"
             alt="FAQ"
             width={546}
             height={546}
-            className="rounded img-fluid "
+            className={`rounded img-fluid ${styles.hover_animate} `}
           />
         </div>
 

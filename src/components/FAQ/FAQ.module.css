@@ -1,6 +1,5 @@
-
-.__span_a52ab2{
-    color: #FF9125 ;
+.__span_a52ab2 {
+    color: #FF9125;
     border: 2px solid #FF9125;
     border-radius: 50%;
     font-size: 18px;
@@ -12,28 +11,51 @@
     margin-left: 20px;
     line-height: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
 }
+
+.__span_a52ab2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid transparent;
+    border-radius: 50%; 
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
 .__span_a52ab2:hover {
     background-color: #FF9125;
     color: #000;
+    box-shadow: 0 0 15px rgba(255, 145, 37, 0.5);
+    transform: translateY(-3px);
+}
+
+.__span_a52ab2:hover::before {
+    opacity: 0;
 }
 
 .no_arrow::after {
     display: none !important;
-  }
+}
 
-._button_a52ab2{
+._button_a52ab2 {
     color: white !important;
     font-size: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
 }
+
 ._button_a52ab2:hover {
     color: #FF9125 !important;
+    text-shadow: 0 0 8px rgba(255, 145, 37, 0.4);
 }
 
 ._div_a52ab2 {
     position: relative;
+    transition: all 0.4s ease;
 }
 
 ._div_a52ab2::before {
@@ -48,5 +70,25 @@
     mask-composite: exclude;
     -webkit-mask-composite: destination-out;
     pointer-events: none;
-  }
+    transition: opacity 0.3s ease;
+}
 
+._div_a52ab2:hover {
+    box-shadow: 0 4px 12px rgba(239, 86, 44, 0.2); /* تم تخفيف الشادو هنا */
+    transform: translateY(-3px);
+}
+
+._div_a52ab2:hover::before {
+    opacity: 0;
+}
+
+.hover_animate {
+    transition: all 0.3s ease;  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: perspective(1000px) translateZ(0);
+}
+
+.hover_animate:hover {
+    transform: perspective(1000px) translateZ(20px);
+    box-shadow: 0 10px 25px rgba(239, 86, 44, 0.2);
+    filter: brightness(1.05);
+}

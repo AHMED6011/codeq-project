@@ -18,7 +18,7 @@ export default function Gallery() {
   ];
   return (
     <div className="container mt-5 text-center">
-      <h1 className="text-center">لحظات توثق مسيرتنا</h1>
+      <h1 className="text-center" style={{marginTop:"150px"}}>لحظات توثق مسيرتنا</h1>
       <p style={{ fontWeight: "600", marginTop: "20px" }}>
         استمتع بمشاهدة أبرز اللحظات من فعالياتنا السابقة، ورش العمل، والمعارض
         التي شاركنا بها، حيث يلتقي الإبداع والشغف في كل صورة ومقطع فيديو.

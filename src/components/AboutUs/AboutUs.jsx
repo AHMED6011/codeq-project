@@ -4,8 +4,8 @@ import styles from "./about.module.css";
 
 const AboutUs = () => {
   return (
-    <div className="container my-5">
-      <h1 className="text-center" style={{ color: "#BE4423" }}>
+    <div className="container my-5" >
+      <h1 className="text-center" style={{ color: "#BE4423" , marginTop: "150px"}}>
         انضم إلينا وكن جزءًا من فريقنا !
       </h1>
       <hr className="border-0 d-none d-md-block my-4" style={gradientLine} />
@@ -24,7 +24,7 @@ const AboutUs = () => {
             alt="about-us"
             width={546}
             height={546}
-            className="img-fluid"
+            className={` img-fluid ${styles.hover_animate} `}
           />
         </div>
 

@@ -41,6 +41,7 @@ export default function Services() {
             }}
           >
             <div
+            className= {`${styles.services_img}`}
               style={{
                 border: "1px solid #545a62",
                 borderRadius: "50%",
