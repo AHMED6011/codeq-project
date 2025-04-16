@@ -31,7 +31,10 @@ export default function RootLayout({
         <FontAwesomeConfig />
       </head>
       <body className={`${plex.className}`}>
-        <Header />
+        <header>
+          <Header />
+        </header>
+
         {children}
         <BootstrapClient />
       </body>
