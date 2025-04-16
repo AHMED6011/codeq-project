@@ -24,3 +24,14 @@
     rgba(238, 85, 44, 0.5) 100%
   );
 }
+
+.hover_animate {
+  transition: all 0.3s ease;  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: perspective(1000px) translateZ(0);
+}
+
+.hover_animate:hover {
+  transform: perspective(1000px) translateZ(20px);
+  box-shadow: 0 10px 25px rgba(239, 86, 44, 0.2);
+  filter: brightness(1.05);
+}

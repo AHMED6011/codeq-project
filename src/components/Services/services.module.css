@@ -1,12 +1,11 @@
 .services_stroke {
   position: relative;
   padding: 16px;
-  transition: all 0.3s ease;
-
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border-radius: 12px;
-  background-color: white; /* Adjust if needed */
 }
 
+/* البوردر الأساسي (ثابت دائمًا) */
 .services_stroke::before {
   content: "";
   position: absolute;
@@ -25,13 +24,35 @@
   -webkit-mask-composite: destination-out;
   pointer-events: none;
 }
+
+/* تأثير الهوفر */
 .services_stroke:hover {
-  border: 1.5px solid #ef552c;
-}
-.hover_effect {
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px #ef562c4c; /* شادو برتقالي */
+  transform: translateY(-4px); /* حركة خفيفة للأعلى */
+  background-color: transparent !important;
 }
 
-.hover_effect:hover {
-  transform: scale(1.05) rotate(3deg);
+/* إخفاء البوردر عند الهوفر */
+.services_stroke:hover::before {
+  opacity: 0;
+}
+
+/* تأثير النص عند الهوفر */
+.services_stroke:hover p {
+  color: #ef552c;
+  letter-spacing: 0.5px; /* تغيير بسيط في التباعد بين الحروف */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* تأثيرات عامة للنص */
+.services_stroke p {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: inline-block; /* ضروري لبعض تأثيرات النص */
+}
+
+.services_stroke:hover .services_img {
+  transform: scale(1.05); /* تكبير الصورة عند الهوفر */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: brightness(1.2); /* زيادة السطوع عند الهوفر */
+  border: #ef562c4c 1px solid !important; /* إضافة حدود برتقالية عند الهوفر */
 }

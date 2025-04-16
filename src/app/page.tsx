@@ -12,6 +12,8 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Hero from "../components/Hero/Hero";
 import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
+import "../components/scrollbar.css";
+
 export default function Home() {
   return (
     <>
