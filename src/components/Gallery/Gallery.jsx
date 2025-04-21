@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import styles from "./Gallery.module.css";
 
 export default function Gallery() {
   const [activeButton, setActiveButton] = useState("الجميع");
@@ -18,53 +19,23 @@ export default function Gallery() {
   ];
   return (
     <div className="container mt-5 text-center">
-      <h1 className="text-center" style={{marginTop:"150px"}}>لحظات توثق مسيرتنا</h1>
+      <h1 className="text-center" style={{ marginTop: "150px" }}>
+        لحظات توثق مسيرتنا
+      </h1>
       <p style={{ fontWeight: "600", marginTop: "20px" }}>
         استمتع بمشاهدة أبرز اللحظات من فعالياتنا السابقة، ورش العمل، والمعارض
         التي شاركنا بها، حيث يلتقي الإبداع والشغف في كل صورة ومقطع فيديو.
       </p>
-      <div
-        style={{
-          height: "54px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "40px auto",
-          borderRadius: "42px",
-          width: "467px",
-          backgroundColor: "black",
-          border: "1px solid #1e1d1d",
-        }}
-      >
-        <div
-          style={{
-            gap: "10px",
-            backgroundColor: "#1e1d1d",
-            width: "98%",
-            height: "46px",
-            borderRadius: "42px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className={styles.gallery}>
+        <div className={styles.gallery_buttons}>
           {buttons.map((button) => (
             <button
               key={button}
               onClick={() => setActiveButton(button)}
+              className={styles.buttons}
               style={{
                 backgroundColor:
                   activeButton === button ? "#BE4423" : "transparent",
-                // width: "92px",
-                // height: "34px",
-                borderRadius: "42px",
-                border: "none",
-                color: "white",
-                fontSize: "16px",
-                lineHeight: "24px",
-                transition: "background-color 0.3s ease",
-                cursor: "pointer",
-                padding: "4px 16px",
               }}
             >
               {button}
