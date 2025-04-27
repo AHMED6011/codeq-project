@@ -25,9 +25,14 @@ export default function Blogs() {
     },
   ];
   return (
-    <div>
-      <h1 className="text-center" style={{marginTop : '150px'}}>استكشف مقالاتنا وأحدث الأخبار</h1>
-      <div className="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-5">
+    <div className="overflow-hidden">
+      <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300" 
+            className="text-center" style={{marginTop : '150px'}}>استكشف مقالاتنا وأحدث الأخبار</h1>
+      <div data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300" className="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-5">
         {blogsContent.map((item, index) => (
           <Blog
             key={index}

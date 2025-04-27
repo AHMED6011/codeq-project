@@ -42,12 +42,18 @@ export default function FAQ() {
   return (
     <div className="container my-5">
       {/* العنوان */}
-      <h1 className="text-center mb-5" style={{marginTop: '150px'}}>الأسئلة الشائعة</h1>
+      <h1   data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300" 
+            className="text-center mb-5" style={{marginTop: '150px'}}>الأسئلة الشائعة</h1>
 
       <div className="row align-items-center gy-4 ">
 
       {/* القسم الأول: الصورة */}
-          <div className={`col-lg-6  justify-content-center d-flex1 `}>
+          <div data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+            className={`col-lg-6  justify-content-center d-flex1 `}>
           <Image
             src="/images/aboutUs.png"
             alt="FAQ"
@@ -59,12 +65,15 @@ export default function FAQ() {
 
         {/* القسم الثاني: الأسئلة */}
         <div className="col-lg-6">
-          <div className="accordion " id="faqAccordion">
+          <div data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+              className="accordion " id="faqAccordion">
             {faqData.map((item, index) => (
-              <div className={`accordion-item bg-black border-0 mb-3 p-2 ${styles._div_a52ab2}`} key={index}>
+              <div  className={`accordion-item  border-0 mb-3 p-2 ${styles._div_a52ab2}`} key={index}>
                 <h2 className={`accordion-header d-flex align-items-center ${styles._header_a52ab2}`} onClick={() => toggleFAQ(index)} >
                   <button
-                    className={`accordion-button bg-black ${styles._button_a52ab2} ${styles.no_arrow}  ${openIndex === index ? "" : "collapsed"}`}
+                    className={`accordion-button  ${styles._button_a52ab2} ${styles.no_arrow}  ${openIndex === index ? "" : "collapsed"}`}
                     type="button"
                     style={{ boxShadow: "none" }}
                   >

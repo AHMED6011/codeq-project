@@ -18,8 +18,14 @@ export default function Gallery() {
   ];
   return (
     <div className="container mt-5 text-center">
-      <h1 className="text-center" style={{marginTop:"150px"}}>لحظات توثق مسيرتنا</h1>
-      <p style={{ fontWeight: "600", marginTop: "20px" }}>
+      <h1   data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+             className="text-center" style={{marginTop:"150px"}}>لحظات توثق مسيرتنا</h1>
+      <p    data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+             style={{ fontWeight: "600", marginTop: "20px" }}>
         استمتع بمشاهدة أبرز اللحظات من فعالياتنا السابقة، ورش العمل، والمعارض
         التي شاركنا بها، حيث يلتقي الإبداع والشغف في كل صورة ومقطع فيديو.
       </p>
@@ -36,7 +42,9 @@ export default function Gallery() {
           border: "1px solid #1e1d1d",
         }}
       >
-        <div
+        <div data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="300"
           style={{
             gap: "10px",
             backgroundColor: "#1e1d1d",
@@ -72,7 +80,9 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-      <div
+      <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",

@@ -23,3 +23,27 @@
   -webkit-mask-composite: destination-out;
   pointer-events: none;
 }
+
+.testimonial:hover {
+  box-shadow: 0 8px 25px #ef562c4c; /* شادو برتقالي */
+  transform: translateY(-4px); /* حركة خفيفة للأعلى */
+}
+
+.testimonial:hover::before {
+  opacity: 0;
+}
+
+.testimonial:hover .p1 {
+  color: #ef552c;
+}
+
+.testimonial:hover p {
+  letter-spacing: 0.5px; /* تغيير بسيط في التباعد بين الحروف */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.testimonial:hover .testimonialImg {
+  transform: scale(1.01); /* تكبير الصورة عند الهوفر */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: brightness(1.2); /* زيادة السطوع عند الهوفر */
+}

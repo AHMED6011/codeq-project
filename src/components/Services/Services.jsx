@@ -9,7 +9,9 @@ AOS.init();
 export default function Services() {
   return (
     <div id="services" className="text-center px-3">
-      <p
+      <p  data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300"
         style={{
           fontSize: "40px",
           fontWeight: "500",
@@ -21,7 +23,7 @@ export default function Services() {
 
       <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 my-5">
         {[1, 2, 3].map((_, i) => (
-          <div
+          <div data-aos="zoom-in-up"
             key={i}
             className={`${styles.services_stroke} ${styles.hover_effect}`}
             style={{
@@ -59,7 +61,7 @@ export default function Services() {
                 height={38}
               />
             </div>
-            <div
+            <div 
               data-aos-anchor-placement="center-center"
               style={{
                 display: "flex",

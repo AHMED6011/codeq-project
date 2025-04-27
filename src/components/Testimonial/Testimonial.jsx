@@ -5,8 +5,12 @@ import Image from "next/image";
 export default function Testimonials() {
   return (
     <div className="my-5 text-center">
-      <h1 className="text-center" style={{marginTop:"150px"}}>آراء عملائنا</h1>
-      <p style={{ maxWidth: "611px", margin: "auto", fontWeight: "600" }}>
+      <h1   data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300" className="text-center" style={{marginTop:"150px"}}>آراء عملائنا</h1>
+      <p    data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300" style={{ maxWidth: "611px", margin: "auto", fontWeight: "600" }}>
         من خلال تعاوننا مع عملائنا، تمكنا من تحقيق رؤاهم وتحويلها إلى نتائج
         ملموسة. اكتشف كيف أسهمت خدماتنا في نجاح مشاريعهم وتحقيق أهدافهم
       </p>

@@ -18,6 +18,7 @@ export default function TestimonialCard() {
       }}
     >
       <Image
+        className={styles.testimonialImg}
         src={img1}
         alt="customer"
         width={269}
@@ -52,7 +53,7 @@ export default function TestimonialCard() {
             </svg>
           ))}
         </div>
-        <p style={{ fontSize: "20px", fontWeight: "500" }}>
+        <p className={styles.p1} style={{ fontSize: "20px", fontWeight: "500" }}>
           نور الدين القحطاني
         </p>
         <p
