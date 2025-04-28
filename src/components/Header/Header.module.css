@@ -1,8 +1,16 @@
-.header_background {
+.header_styles {
   border: 1px solid rgba(190, 68, 35, 1);
   background-color: #20212369;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  width: 90% !important;
+  border-radius: 30px;
+  padding: 5px 10px;
+  top: 15px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .navbar_cover {
   background: linear-gradient(
@@ -26,4 +34,35 @@
 .navbar_bars:focus {
   outline: none;
   box-shadow: none;
+}
+
+.contact_us {
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px 24px;
+}
+
+@media (max-width: 992px) {
+  .header_styles {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .header_styles {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar_bars {
+    padding: 2px 7px;
+    font-size: 17px;
+  }
+
+  .contact_us {
+    font-size: 11px;
+    padding: 3px 15px;
+  }
 }

@@ -2,10 +2,6 @@
 import styles from "./services.module.css";
 import Image from "next/image";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
-
 export default function Services() {
   return (
     <div id="services" className="text-center px-3">
@@ -43,7 +39,7 @@ export default function Services() {
             }}
           >
             <div
-            className= {`${styles.services_img}`}
+              className={`${styles.services_img}`}
               style={{
                 border: "1px solid #545a62",
                 borderRadius: "50%",

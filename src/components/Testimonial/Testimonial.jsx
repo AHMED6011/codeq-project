@@ -1,8 +1,19 @@
+"use client";
+import { useState, useEffect } from "react";
 import React from "react";
 import styles from "./testimonial.module.css";
 import TestimonialCard from "./TestimonialCard";
 import Image from "next/image";
 export default function Testimonials() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="my-5 text-center">
       <h1   data-aos="fade-down"
@@ -30,6 +41,7 @@ export default function Testimonials() {
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />
+
       </div>
     </div>
   );

@@ -6,16 +6,6 @@ export default function TestimonialCard() {
   return (
     <div
       className={styles.testimonial}
-      style={{
-        minWidth: "1059px",
-        height: "364px",
-        backgroundColor: "#252E3D63",
-        borderRadius: "10px",
-        display: "flex",
-        alignItems: "center",
-        gap: "20px",
-        padding: "15px",
-      }}
     >
       <Image
         className={styles.testimonialImg}

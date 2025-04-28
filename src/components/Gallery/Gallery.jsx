@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import styles from "./Gallery.module.css";
 
 export default function Gallery() {
   const [activeButton, setActiveButton] = useState("الجميع");
@@ -21,7 +22,7 @@ export default function Gallery() {
       <h1   data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="300"
-             className="text-center" style={{marginTop:"150px"}}>لحظات توثق مسيرتنا</h1>
+             className="text-center" style={{marginTop:"150px"}}> </h1>
       <p    data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="300"
@@ -60,19 +61,10 @@ export default function Gallery() {
             <button
               key={button}
               onClick={() => setActiveButton(button)}
+              className={styles.buttons}
               style={{
                 backgroundColor:
                   activeButton === button ? "#BE4423" : "transparent",
-                // width: "92px",
-                // height: "34px",
-                borderRadius: "42px",
-                border: "none",
-                color: "white",
-                fontSize: "16px",
-                lineHeight: "24px",
-                transition: "background-color 0.3s ease",
-                cursor: "pointer",
-                padding: "4px 16px",
               }}
             >
               {button}
