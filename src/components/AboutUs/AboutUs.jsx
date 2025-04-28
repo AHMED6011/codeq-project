@@ -1,16 +1,24 @@
 "use client";
 import Image from "next/image";
 import styles from "./about.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const AboutUs = () => {
   return (
     <div className="container my-5" >
-      <h1 className="text-center" style={{ color: "#BE4423" , marginTop: "150px"}}>
+      <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300"  className="text-center" style={{ color: "#BE4423" , marginTop: "150px"}}>
         انضم إلينا وكن جزءًا من فريقنا !
       </h1>
-      <hr className="border-0 d-none d-md-block my-4" style={gradientLine} />
+      <hr  className="border-0 d-none d-md-block my-4" style={gradientLine} />
 
-      <p className="text-center mx-auto px-3" style={{ maxWidth: "922px" }}>
+      <p    data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+             className="text-center mx-auto px-3" style={{ maxWidth: "922px" }}>
         نسعى دائمًا لتوسيع فريقنا وضم أشخاص مبدعين وطموحين يشاركونا رؤيتنا في
         تطوير مشاريع متميزة. سواء كنت ترغب في التطوع أو البحث عن فرصة عمل، فهناك
         دائمًا مكان لك معنا!
@@ -18,7 +26,9 @@ const AboutUs = () => {
 
       <div className="row align-items-center mt-5 gy-4">
         {/* Image Section */}
-        <div className="col-12 col-md-6 text-center">
+        <div   data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300" className="col-12 col-md-6 text-center">
           <Image
             src="/images/aboutUs.png"
             alt="about-us"
@@ -32,9 +42,14 @@ const AboutUs = () => {
         <div className="col-12 col-md-6 d-flex flex-column gap-4">
           {/* Block 1 */}
           <div className="d-flex gap-3 align-items-start flex-column flex-md-row text-center text-md-end">
-            <div className={styles.blog_stroke}>01</div>
-            <div>
-              <p className="fw-bold fs-5">فرص التطوع</p>
+            <div data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+             className={styles.blog_stroke}>01</div>
+            <div className="overflow-hidden">
+              <p  data-aos="fade-down-right"
+            data-aos-easing="linear"
+            data-aos-duration="350"  className="fw-bold fs-5">فرص التطوع</p>
               <p className="text-secondary">
                 إذا كنت ترغب في تقديم يد العون والمساهمة في مشاريعنا المختلفة،
                 يمكنك الانضمام إلينا كمتطوع. نحن نرحب بالأشخاص المتحمسين الذين
@@ -47,13 +62,17 @@ const AboutUs = () => {
 
           {/* Block 2 */}
           <div className="d-flex gap-3 align-items-start flex-column flex-md-row text-center text-md-end">
-            <div
+            <div data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="400"
               className={`${styles.blog_stroke} ${styles.second_blog_stroke}`}
             >
               02
             </div>
-            <div>
-              <p className="fw-bold fs-5" style={{ color: "#EF552C" }}>
+            <div className="overflow-hidden">
+              <p data-aos="fade-down-right"
+            data-aos-easing="linear"
+            data-aos-duration="450" className="fw-bold fs-5" style={{ color: "#EF552C" }}>
                 الفرص الوظيفية المتاحة
               </p>
               <p className="text-secondary">
@@ -68,9 +87,13 @@ const AboutUs = () => {
 
           {/* Block 3 */}
           <div className="d-flex gap-3 align-items-start flex-column flex-md-row text-center text-md-end">
-            <div className={styles.blog_stroke}>03</div>
-            <div>
-              <p className="fw-bold fs-5">المهارات المطلوبة</p>
+            <div data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="500" className={styles.blog_stroke}>03</div>
+            <div className="overflow-hidden">
+              <p data-aos="fade-down-right"
+            data-aos-easing="linear"
+            data-aos-duration="550" className="fw-bold fs-5">المهارات المطلوبة</p>
               <p className="text-secondary">
                 نبحث عن أشخاص لديهم مهارات في التصميم الجرافيكي وتجربة المستخدم،
                 البرمجة وتطوير المواقع، التسويق الرقمي وصناعة المحتوى، بالإضافة

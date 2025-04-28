@@ -13,20 +13,29 @@ export default function Projects() {
         />
       </div>
       
-      <h1 className={styles.sectionTitle}>
+      <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300" 
+            className={styles.sectionTitle}>
         مشاريعنا الرقمية المبتكرة
       </h1>
       
       <hr className="border-0 d-none d-md-block my-4" />
             
-      <p className={styles.sectionDescription}>
+      <p data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+            className={styles.sectionDescription}>
         نحن في CODEQ نؤمن بأن الإبداع والتقنية يسيران جنبًا إلى جنب. في هذا
         القسم، نعرض مجموعة من المشاريع التي تعكس شغفنا بالتطوير والابتكار، بدءًا
         من البرمجيات الحديثة وصولًا إلى الحلول الرقمية المتقدمة.
       </p>
       
       <div className={styles.projectsGrid}>
-        <div className={`${styles.projectCard} ${styles.webDesign}`}>
+        <div data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+             className={`${styles.projectCard} ${styles.webDesign}`}>
           <h2>مشاريع تطوير المواقع</h2>
           <p>
             من الفكرة إلى الإطلاق، نقدم حلولًا متكاملة لتصميم وتطوير المواقع
@@ -44,7 +53,10 @@ export default function Projects() {
           </button>
         </div>
         
-        <div className={`${styles.projectCard} ${styles.visualIdentity}`}>
+        <div data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+             className={`${styles.projectCard} ${styles.visualIdentity}`}>
           <h2>مشاريع الهوية البصرية</h2>
           <p>
             نؤمن بأن الهوية البصرية هي جوهر أي علامة تجارية ناجحة. في هذا القسم،
@@ -63,7 +75,9 @@ export default function Projects() {
           </button>
         </div>
         
-        <div className={`${styles.projectCard} ${styles.softwareProjects}`}>
+        <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="300" className={`${styles.projectCard} ${styles.softwareProjects}`}>
           <h2>مشاريع البرمجيات</h2>
           <p>
             نطور مواقع إلكترونية متميزة تلبي احتياجات المستخدمين، سواء كانت

@@ -29,7 +29,7 @@
 .services_stroke:hover {
   box-shadow: 0 8px 25px #ef562c4c; /* شادو برتقالي */
   transform: translateY(-4px); /* حركة خفيفة للأعلى */
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
 }
 
 /* إخفاء البوردر عند الهوفر */
