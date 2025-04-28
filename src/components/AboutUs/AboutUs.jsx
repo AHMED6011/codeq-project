@@ -1,11 +1,14 @@
 "use client";
 import Image from "next/image";
 import styles from "./about.module.css";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="container my-5" >
       <h1 data-aos="fade-down"
@@ -18,7 +21,7 @@ const AboutUs = () => {
       <p    data-aos="fade-left"
             data-aos-easing="linear"
             data-aos-duration="300"
-             className="text-center mx-auto px-3" style={{ maxWidth: "922px" }}>
+            className="text-center mx-auto px-3" style={{ maxWidth: "922px" }}>
         نسعى دائمًا لتوسيع فريقنا وضم أشخاص مبدعين وطموحين يشاركونا رؤيتنا في
         تطوير مشاريع متميزة. سواء كنت ترغب في التطوع أو البحث عن فرصة عمل، فهناك
         دائمًا مكان لك معنا!
